@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>F1 Racing Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js",
+                "three/examples/jsm/loaders/GLTFLoader": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/loaders/GLTFLoader.js"
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="start-button">Start Game</button>
+    <button id="restart-button" style="display: none;">Restart Game</button>
+    
+    <div id="loading-container"></div>
+    <div id="game-container"></div>
+
+    <div id="distanceDisplay" style="display: none;">Distance Travelled: 0 units</div>
+    <div id="fuelDisplay" style="display: none;">Fuel: 100%</div>
+
+    <script type="module" src="modules/config.js"></script>
+    <script type="module" src="modules/sceneSetup.js"></script>
+    <script type="module" src="modules/controlsModule.js"></script>
+    <script type="module" src="modules/gameObjects.js"></script>
+    <script type="module" src="modules/uiManager.js"></script>
+    <script type="module" src="modules/gameLogic.js"></script>
+    <script type="module" src="modules/modelLoader.js"></script>
+    <script type="module" src="modules/eventHandlers.js"></script>
+    <script type="module" src="modules/main.js"></script>
+</body>
+
+</html>
